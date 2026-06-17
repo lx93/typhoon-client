@@ -14,7 +14,7 @@ can be reused by Linux and Windows clients later.
 
 ## Requirements
 
-- A running Typhoon broker.
+- A running OpenRung broker.
 - At least one registered volunteer relay.
 - A local `sing-box` binary. Use sing-box 1.14 or newer so the generated TUN
   config can install native DNS settings for the tunnel.
@@ -45,7 +45,7 @@ Then it prints the selected usable relay.
 ```sh
 go run ./cmd/client config \
   -broker http://localhost:8080 \
-  -out typhoon-sing-box.json
+  -out openrung-sing-box.json
 ```
 
 The generated config uses:
